@@ -1,4 +1,4 @@
-import Queue from "./queue.mjs";
+import Queue from "./index.mjs";
 // 测试队列
 const queue = new Queue();
 queue.enqueue("tom");
