@@ -12,7 +12,6 @@ const palindromeChecker = (str) => {
   let first = "";
   let last = "";
   const str2Lowercase = str.toLocaleLowerCase().split(" ").join("");
-  console.log("str:", str2Lowercase);
   for (let index = 0, len = str2Lowercase.length; index < len; index++) {
     deque.addBack(str2Lowercase.charAt(index));
   }
@@ -35,13 +34,3 @@ console.log(
   palindromeChecker("Was it a car or a cat I saw")
 );
 console.log("Step on no pets", palindromeChecker("Step  on no pets"));
-
-// const deque = new Deque();
-// deque.addBack("a");
-// console.log("deque:", deque);
-// deque.addBack("a");
-// console.log("deque:", deque);
-// console.log(`first: ${deque.removeFront()}`);
-// console.log(deque.size());
-// console.log("deque:", deque);
-// console.log(`last: ${deque.removeBack()}`);
