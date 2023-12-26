@@ -10,3 +10,4 @@ export class DoublyNode extends Node {
     this.prev = prev;
   }
 }
+

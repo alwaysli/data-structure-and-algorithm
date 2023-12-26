@@ -46,12 +46,14 @@ export default class LinkList {
   remove(element) {
     const position = this.indexOf(element);
     if (position > -1) {
-      const previous = this.getElementAt(position - 1);
-      const current = previous.next;
+      // 只要存在该元素，便能正常移除
+      this.removeAt(position);
+      // const previous = this.getElementAt(position - 1);
+      // const current = previous.next;
 
-      // 移除 current, 将previous 与 next 连接起来
-      previous.next = current.next;
-      this.count--;
+      // // 移除 current, 将previous 与 next 连接起来
+      // previous.next = current.next;
+      // this.count--;
       return true;
     }
     return false;
